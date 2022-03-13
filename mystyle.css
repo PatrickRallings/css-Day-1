@@ -7,54 +7,40 @@ h1:hover {
 h2 {
   color: aqua;
 }
-table, th, td{
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    border-collapse: separate;
+table {
+  overflow: hidden;
 }
-.col1:hover {
-    background-color: lightgray;
-    border-left-style: dashed;
-    border-right-style: dashed;
+#tableHead {
+  font-size: larger;
+  background-color: ;
 }
-.col2:hover {
-    background-color: lightgray;
-    border-left-style: dashed;
-    border-right-style: dashed;
+td,
+th {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: separate;
+  padding: 10px;
+  position: relative;
+  outline: 0;
 }
-.col3:hover {
-    background-color: lightgray;
-    border-left-style: dashed;
-    border-right-style: dashed;
+
+tr:hover,
+td:hover::after,
+th:hover::after {
+  background-color: lightslategrey;
 }
-.row1:hover {
-    background-color: lightgray;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
+td:hover::after {
+  content: "";
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
 }
-.row2:hover {
-    background-color: lightgray;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
-}
-.row3:hover {
-    background-color: lightgray;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
-}
-.row4:hover {
-    background-color: lightgray;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
-}
-.row5:hover {
-    background-color: lightgray;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
-}
-td:hover {
-    border-style: solid;
-    border-color: greenyellow;
-    background-color: greenyellow;
+.testid:hover {
+  border: 1px;
+  border-style: dotted;
+  border-color: aquamarine;
 }
