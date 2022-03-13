@@ -1,18 +1,12 @@
-h1:hover {
-  border: 1px;
-  border-style: double;
-  border-color: blue;
-  font-style: italic;
+#headHoverChange:not(:hover) {
+  ;
+color: blue;
 }
 h2 {
   color: aqua;
 }
 table {
   overflow: hidden;
-}
-#tableHead {
-  font-size: larger;
-  background-color: ;
 }
 td,
 th {
